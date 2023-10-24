@@ -1,0 +1,18 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:textBox="clr-namespace:BrokVpn.Controls.BaseControls.TextBoxs">
+
+    <Style x:Key="StyleTextBox" TargetType="textBox:ccTextBox">
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="SelectionBrush" Value="{DynamicResource bgBorderIn}" />
+        <Setter Property="SelectionOpacity" Value="0.5" />
+        <Setter Property="Template" Value="{DynamicResource Template}" />
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Background" Value="{DynamicResource bgBorderInIn}" />
+        <Setter Property="Foreground" Value="{DynamicResource bgButtonStartApp}" />
+        <Setter Property="FontFamily" Value="{DynamicResource Roboto}" />
+    </Style>
+
+</ResourceDictionary>

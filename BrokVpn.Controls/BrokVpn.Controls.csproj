@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrokVpn.Vpn\BrokVpn.Vpn.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BrokHelperCustomControlLibrary">
+      <HintPath>..\..\..\..\MainApp\Developer\MainProject\BrokHelper\BrokHelperCustomControlLibrary\bin\Debug\net7.0-windows\BrokHelperCustomControlLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

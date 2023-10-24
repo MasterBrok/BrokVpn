@@ -1,0 +1,151 @@
+﻿<Window
+    x:Class="BrokVpn.Views.wLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:buttons="clr-namespace:BrokVpn.Controls.BaseControls.Buttons;assembly=BrokVpn.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dd="clr-namespace:BrokVpn.ViewModels"
+    xmlns:local="clr-namespace:BrokVpn.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:textBox="clr-namespace:BrokVpn.Controls.BaseControls.TextBoxs;assembly=BrokVpn.Controls"
+    x:Name="windowLogin"
+    Title="wLogin"
+    Width="350"
+    Height="500"
+    AllowsTransparency="True"
+    Background="Transparent"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.DataContext>
+        <dd:LoginViewModel />
+    </Window.DataContext>
+    <Border Background="{StaticResource bgWindowVpnApp}" CornerRadius="10">
+        <Grid>
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="5*" />
+            </Grid.RowDefinitions>
+
+            <Border
+                Width="120"
+                Height="20"
+                VerticalAlignment="Top"
+                Background="{StaticResource bgBorderIn}"
+                CornerRadius="0 0 10 10" />
+
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontFamily="{StaticResource Roboto}"
+                FontSize="20"
+                FontWeight="Regular"
+                Foreground="{StaticResource fgTextWindowVpn}"
+                Text="Brok Vpn">
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <StringAnimationUsingKeyFrames
+                                    AutoReverse="True"
+                                    RepeatBehavior="Forever"
+                                    Storyboard.TargetProperty="Text">
+                                    <StringAnimationUsingKeyFrames.KeyFrames>
+                                        <DiscreteStringKeyFrame KeyTime="00:00:00:00.1" Value="B" />
+                                        <DiscreteStringKeyFrame KeyTime="00:00:00:00.6" Value="Br" />
+                                        <DiscreteStringKeyFrame KeyTime="00:00:00:01" Value="Bro" />
+                                        <DiscreteStringKeyFrame KeyTime="00:00:00:01.4" Value="Brok" />
+                                        <DiscreteStringKeyFrame KeyTime="00:00:00:01.6" Value="Brok V" />
+                                        <DiscreteStringKeyFrame KeyTime="00:00:00:01.8" Value="Brok Vp" />
+                                        <DiscreteStringKeyFrame KeyTime="00:00:00:02" Value="Brok Vpn" />
+                                        <DiscreteStringKeyFrame KeyTime="00:00:00:03" Value="Brok Vpn" />
+                                    </StringAnimationUsingKeyFrames.KeyFrames>
+                                </StringAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+
+
+            <Path
+                Grid.Row="1"
+                Width="120"
+                Height="120"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Data="M25 0C22.546875 0 20.476563 1.355469 17.40625 2.9375C14.335938 4.519531 10.214844 6.429688 3.78125 7.84375L3 8.03125L3 8.8125C3 24.132813 8.371094 34.371094 13.75 40.71875C19.128906 47.066406 24.59375 49.59375 24.59375 49.59375L25.03125 49.8125L25.46875 49.59375C25.46875 49.59375 47 38.46875 47 8.8125L47 8.03125L46.21875 7.84375C39.785156 6.429688 35.664063 4.519531 32.59375 2.9375C29.523438 1.355469 27.453125 0 25 0 Z M 25 2C26.644531 2 28.550781 3.105469 31.6875 4.71875C34.667969 6.25 38.859375 8.128906 44.9375 9.5625C44.570313 36.679688 26.253906 46.851563 24.96875 47.53125C24.347656 47.230469 20.019531 45.066406 15.25 39.4375C10.222656 33.503906 5.246094 23.960938 5.0625 9.5625C11.140625 8.128906 15.332031 6.25 18.3125 4.71875C21.449219 3.105469 23.355469 2 25 2Z"
+                Stretch="Uniform"
+                Stroke="{DynamicResource bgEffectElipseVpnRight}"
+                StrokeDashArray="10"
+                StrokeDashOffset="20">
+                <Path.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation
+                                    AutoReverse="True"
+                                    RepeatBehavior="Forever"
+                                    Storyboard.TargetProperty="StrokeDashOffset"
+                                    To="500"
+                                    Duration="00:00:00:04" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Path.Triggers>
+            </Path>
+
+            <Path
+                Grid.Row="1"
+                Width="80"
+                Height="80"
+                Margin="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Data="M25 0C22.546875 0 20.476563 1.355469 17.40625 2.9375C14.335938 4.519531 10.214844 6.429688 3.78125 7.84375L3 8.03125L3 8.8125C3 24.132813 8.371094 34.371094 13.75 40.71875C19.128906 47.066406 24.59375 49.59375 24.59375 49.59375L25.03125 49.8125L25.46875 49.59375C25.46875 49.59375 47 38.46875 47 8.8125L47 8.03125L46.21875 7.84375C39.785156 6.429688 35.664063 4.519531 32.59375 2.9375C29.523438 1.355469 27.453125 0 25 0 Z M 25 2C26.644531 2 28.550781 3.105469 31.6875 4.71875C34.667969 6.25 38.859375 8.128906 44.9375 9.5625C44.570313 36.679688 26.253906 46.851563 24.96875 47.53125C24.347656 47.230469 20.019531 45.066406 15.25 39.4375C10.222656 33.503906 5.246094 23.960938 5.0625 9.5625C11.140625 8.128906 15.332031 6.25 18.3125 4.71875C21.449219 3.105469 23.355469 2 25 2Z"
+                Fill="{DynamicResource bgBorderIn}"
+                Stretch="Uniform"
+                Stroke="{DynamicResource bgEffectElipseVpnBottom}"
+                StrokeDashArray="10"
+                StrokeDashOffset="20">
+                <Path.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation
+                                    AutoReverse="True"
+                                    RepeatBehavior="Forever"
+                                    Storyboard.TargetProperty="StrokeDashOffset"
+                                    To="500"
+                                    Duration="00:00:00:04" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Path.Triggers>
+            </Path>
+
+            <StackPanel Grid.Row="1" VerticalAlignment="Center">
+                <textBox:ccTextBox
+                    Placeholder="User Name"
+                    Style="{StaticResource StyleTextBox}"
+                    Template="{StaticResource TemplateTextBox}"
+                    Text="{Binding User.UserName}" />
+                <textBox:ccTextBox
+                    Placeholder="Password"
+                    Style="{StaticResource StyleTextBox}"
+                    Template="{StaticResource TemplateTextBox}"
+                    Text="{Binding User.Password}" />
+
+                <buttons:ccButtonRadius
+                    Command="{Binding LoginCommand}"
+                    CommandParameter="{Binding ElementName=windowLogin}"
+                    Content="Login"
+                    Style="{StaticResource StyleButtonRadius1}"
+                    Template="{StaticResource TemplateButtonRadius}" />
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</Window>

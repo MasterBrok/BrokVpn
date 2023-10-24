@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Storyboard
+        x:Key="IsSelectListBoxItem"
+        AutoReverse="True"
+        RepeatBehavior="Forever"
+        Duration="00:00:00:05">
+        <DoubleAnimation
+            AutoReverse="True"
+            RepeatBehavior="Forever"
+            Storyboard.TargetName="Left"
+            Storyboard.TargetProperty="StrokeDashOffset"
+            To="100" />
+
+        <DoubleAnimation
+            AutoReverse="True"
+            RepeatBehavior="Forever"
+            Storyboard.TargetName="Right"
+            Storyboard.TargetProperty="StrokeDashOffset"
+            To="100" />
+    </Storyboard>
+
+    <Storyboard
+        x:Key="IsSelectListBoxItemIcon"
+        AutoReverse="True"
+        RepeatBehavior="Forever"
+        Duration="00:00:00:20">
+        <DoubleAnimation
+            AutoReverse="True"
+            RepeatBehavior="Forever"
+            SpeedRatio="0.1"
+            Storyboard.TargetName="WorldIcon"
+            Storyboard.TargetProperty="StrokeDashOffset"
+            To="100" />
+
+    </Storyboard>
+</ResourceDictionary>

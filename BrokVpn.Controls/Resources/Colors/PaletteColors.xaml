@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <SolidColorBrush x:Key="bgButtonStartApp" Color="#47DDC2" />
+    <SolidColorBrush x:Key="fgTextStartApp" Color="#FBFBFB" />
+    <SolidColorBrush x:Key="bgWindowStartApp" Color="#1E242B" />
+    <SolidColorBrush x:Key="bgWindowVpnApp" Color="#1E242B" />
+    <SolidColorBrush x:Key="bgEffectTopWindowVpnApp" Color="#3F4956" />
+    <SolidColorBrush x:Key="fgTextWindowVpn" Color="#FCFCFC" />
+    <SolidColorBrush x:Key="bgElipseVpn" Color="#3B4652" />
+    <SolidColorBrush x:Key="bgEffectElipseVpnLeft" Color="#B04C76" />
+    <SolidColorBrush x:Key="bgEffectElipseVpnRight" Color="#46DAC0" />
+    <SolidColorBrush x:Key="bgEffectElipseVpnBottom" Color="#35928E" />
+    <SolidColorBrush x:Key="bgBorderInIn" Color="#3B4652" />
+    <SolidColorBrush x:Key="bgBorderIn" Color="#2D3843" />
+    <SolidColorBrush x:Key="bgActiveButton1" Color="#FF6393" />
+    <SolidColorBrush x:Key="bgActiveButton2" Color="#47DDC2" />
+    <SolidColorBrush x:Key="bgUnActiveButton" Color="#465260" />
+    <SolidColorBrush x:Key="stActiveIcon" Color="#8E9AA8" />
+    <SolidColorBrush x:Key="stUnActiveIcon" Color="#FFFFFF" />
+
+</ResourceDictionary>

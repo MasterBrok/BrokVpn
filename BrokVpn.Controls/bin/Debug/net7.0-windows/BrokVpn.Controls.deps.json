@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "BrokVpn.Controls/1.0.0": {
+        "dependencies": {
+          "BrokVpn.Vpn": "1.0.0",
+          "BrokHelperCustomControlLibrary": "1.0.0.0"
+        },
+        "runtime": {
+          "BrokVpn.Controls.dll": {}
+        }
+      },
+      "BrokVpn.Vpn/1.0.0": {
+        "runtime": {
+          "BrokVpn.Vpn.dll": {}
+        }
+      },
+      "BrokHelperCustomControlLibrary/1.0.0.0": {
+        "runtime": {
+          "BrokHelperCustomControlLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BrokVpn.Controls/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BrokVpn.Vpn/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BrokHelperCustomControlLibrary/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
